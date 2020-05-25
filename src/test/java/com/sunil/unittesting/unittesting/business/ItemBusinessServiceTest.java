@@ -17,11 +17,13 @@ import static org.junit.jupiter.api.Assertions.*;
 @RunWith(MockitoJUnitRunner.class)
 class ItemBusinessServiceTest {
 
-    @Mock
-    private ItemRepository itemRepository;
+
 
     @InjectMocks
     private ItemBusinessService businessService;
+
+    @Mock
+    private ItemRepository itemRepository;
 
     @Test
     void retrieveAllItems() {
